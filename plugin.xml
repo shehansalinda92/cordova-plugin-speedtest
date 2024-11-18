@@ -26,7 +26,7 @@
         <source-file src="src/ios/CustomTestHandler.swift"/>
         <source-file src="src/ios/EndpontHandler.swift"/>
         <source-file src="src/ios/ResultDTO.swift"/>
-        <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+<!--         <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
             <dict>
                 <key>NSAllowsArbitraryLoads</key>
                 <true/>
@@ -34,7 +34,7 @@
         </config-file>
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
             <string>Access Location Service</string>
-        </config-file>
+        </config-file> -->
     </platform>
 
     <platform name="android">
