@@ -14,7 +14,6 @@
     </engines>
 
     <platform name="ios">
-<!--     <preference name="UseSwiftLanguageVersion" value="5" /> -->
         <source-file src="src/ios/frameworks/SpeedtestSDK.xcframework" target-dir="lib" framework="true"/>
         <framework src="libc++.tbd"/>
         <framework src="libz.tbd"/>
@@ -27,7 +26,7 @@
         <source-file src="src/ios/CustomTestHandler.swift"/>
         <source-file src="src/ios/EndpontHandler.swift"/>
         <source-file src="src/ios/ResultDTO.swift"/>
-        <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+<!--         <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
             <dict>
                 <key>NSAllowsArbitraryLoads</key>
                 <true/>
@@ -35,7 +34,7 @@
         </config-file>
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
             <string>Access Location Service</string>
-        </config-file>
+        </config-file> -->
     </platform>
 
     <platform name="android">
