@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-speedtest",
+  "version": "1.0.0",
+  "description": "A Cordova plugin for speed test functionality",
+  "cordova": {
+    "id": "cordova-plugin-speedtest",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "keywords": [
+    "ios",
+    "android",
+    "cordova",
+    "speedtest",
+    "plugin"
+  ],
+  "author": "shehan.salinda@ncinga.net",
+  "license": "MIT"
+}
