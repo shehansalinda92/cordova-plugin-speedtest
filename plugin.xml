@@ -15,8 +15,8 @@
     <platform name="ios">
         <preference name="swift_version" value="4.0" />
         <source-file src="src/ios/frameworks/SpeedtestSDK.xcframework" target-dir="lib" framework="true"/>
-        <framework src="libc++.tbd"/>
-        <framework src="libz.tbd"/>
+        <!-- <framework src="libc++.tbd"/>
+        <framework src="libz.tbd"/> -->
         <config-file target="config.xml" parent="/*">
             <feature name="SpeedTest">
                 <param name="ios-package" value="SpeedTest"/>
