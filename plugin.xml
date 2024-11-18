@@ -14,7 +14,7 @@
     </engines>
 
     <platform name="ios">
-     <preference name="UseLegacySwiftLanguageVersion" value="true" />
+    <preference name="UseSwiftLanguageVersion" value="5" />
 <!--         <source-file src="src/ios/frameworks/SpeedtestSDK.xcframework" target-dir="lib" framework="true"/>
         <framework src="libc++.tbd"/>
         <framework src="libz.tbd"/>
