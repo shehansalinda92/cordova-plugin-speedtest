@@ -5,6 +5,7 @@ module.exports = function (ctx) {
     const path = require('path');
 
     const projectRoot = ctx.opts.projectRoot;
+    console.log("project path :", projectRoot)
     const platformDir = path.join(projectRoot, 'platforms', 'ios');
     const configPath = path.join(platformDir, 'cordova', 'build.xcconfig');
 
