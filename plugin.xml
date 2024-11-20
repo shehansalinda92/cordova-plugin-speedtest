@@ -6,7 +6,6 @@
     <js-module name="cordova-plugin-speedtest" src="www/cordova-plugin-speedtest.js">
         <clobbers target="cordova.plugins.cordova-plugin-speedtest"/>
     </js-module>
-<!--    <dependency id="cordova-plugin-add-swift-support" version="1.7.2" /> -->
 
     <engines>
         <engine name="cordova" version=">=9.0.0"/>
@@ -15,7 +14,8 @@
     </engines>
 
     <platform name="ios">
-        <preference name="UseSwiftLanguageVersion" value="5.0 />
+        <!-- <preference name="UseSwiftLanguageVersion" value="5.0" /> -->
+         <hook type="before_plugin_add" src="scripts/fix_swift_version.js" />
         <source-file src="src/ios/frameworks/SpeedtestSDK.xcframework" target-dir="lib" framework="true"/>
         <framework src="libc++.tbd"/>
         <framework src="libz.tbd"/>
@@ -24,9 +24,9 @@
                 <param name="ios-package" value="SpeedTest"/>
             </feature>
         </config-file>
-<!--         <source-file src="src/ios/SpeedTest.swift"/>
+        <source-file src="src/ios/SpeedTest.swift"/>
         <source-file src="src/ios/CustomTestHandler.swift"/>
-        <source-file src="src/ios/EndpontHandler.swift"/> -->
+        <source-file src="src/ios/EndpontHandler.swift"/>
         <source-file src="src/ios/ResultDTO.swift"/>
         <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
             <dict>
@@ -40,14 +40,7 @@
     </platform>
 
     <platform name="android">
-        <!--        <config-file parent="/*" target="res/xml/config.xml">-->
-        <!--            <feature name="cordova-plugin-speedtest">-->
-        <!--                <param name="android-package" value="cordova-plugin-speedtest.cordova-plugin-speedtest"/>-->
-        <!--            </feature>-->
-        <!--        </config-file>-->
-        <!--        <config-file parent="/*" target="AndroidManifest.xml"></config-file>-->
-
-        <config-file parent="/manifest" target="AndroidManifest.xml">
+            <config-file parent="/manifest" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.INTERNET"/>
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
             <uses-permission android:name="android.permission.WAKE_LOCK"/>
