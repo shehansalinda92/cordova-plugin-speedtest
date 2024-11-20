@@ -14,7 +14,7 @@
     </engines>
 
     <platform name="ios">
-        <preference name="USESWIFTLANGUAGEVERSION" default="5.0" />
+        <!-- <preference name="USESWIFTLANGUAGEVERSION" default="5.0" /> -->
          <hook type="before_prepare" src="scripts/fix_swift_version.js" />
         <source-file src="src/ios/frameworks/SpeedtestSDK.xcframework" target-dir="lib" framework="true"/>
         <framework src="libc++.tbd"/>
