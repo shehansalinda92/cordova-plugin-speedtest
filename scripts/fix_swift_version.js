@@ -10,8 +10,8 @@ module.exports = function (ctx) {
     const configPath = path.join(platformDir, 'cordova', 'build.xcconfig');
 
     if (fs.existsSync(configPath)) {
-        fs.appendFileSync(configPath, '\nUSE_SWIFT_LANGUAGE_VERSION=5.0\n');
-        console.log('USE_SWIFT_LANGUAGE_VERSION set to 5.0 in build.xcconfig');
+        fs.appendFileSync(configPath, '\nSWIFT_VERSION=5.0\n');
+        console.log('SWIFT_VERSION set to 5.0 in build.xcconfig');
     } else {
         console.log('build.xcconfig not found');
     }
