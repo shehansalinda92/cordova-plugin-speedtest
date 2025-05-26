@@ -1,0 +1,36 @@
+{
+  "name": "com.ncinga.demoapp",
+  "displayName": "DemoApp",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^13.0.0",
+    "cordova-ios": "^7.1.1",
+    "cordova-plugin-add-swift-support": "github:OutSystems/cordova-plugin-add-swift-support#2.0.0",
+    "cordova-plugin-device": "^3.0.0",
+    "cordova-plugin-x-socialsharing": "^6.0.4",
+    "es6-promise-plugin": "^4.2.2",
+    "ookla-speedtest": "file:../with_token_params/SpeedTest",
+    "SpeedTest": "file:../../UAT/SpeedTest"
+  },
+  "cordova": {
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-device": {},
+      "cordova-plugin-x-socialsharing": {},
+      "SpeedTest": {}
+    }
+  }
+}
